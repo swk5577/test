@@ -1,10 +1,90 @@
  /* 이름이있다면 . 후 이름 . = class */
- /* 이름이 없다면 태그를 */
+ /* 이름이 없다면 태그를 # 같은 테그에 모두 css가 들어감 */
  /* 속성과 값은 : 로 구분한다 */
  /* 명령이 끝나고나면 ; 를 찍는다 */
 
-.entire {
+body {
     width: 1750px;
-    border:5px solid #f00;
+    margin: auto;
+    padding: 42px 85px;
+    border: 1px solid #000;
 }
-.entire img{width:100%;}
+.manu {
+    text-align: right;
+    margin: 57px 0;
+}
+.manu > a {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #000;
+    margin: 40px;
+    text-decoration : none;
+}
+.main > img{
+    width: 100%;
+}
+.main > .text {
+    padding: 57px;
+    background-color: #0a0a0a;
+    width: 40%;
+    border: 1px solid #000; 
+    text-align: left;
+    display: inline-block;
+}   
+.main > .text > p {
+    color: grey;
+    font-size: 33px;
+    font-weight: bold;
+}
+.main > .text div{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+.main > .text a {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.txt-1 {
+    text-align: left;
+    margin: 0 auto;
+}
+.txt-1 > b {
+    font-size: 74px;
+}
+.txt-1 > p {
+    width: 55%;
+    color: #545454;
+    font-size: 36px;
+    margin: 52px 0;
+    line-height: 43px; /*줄간격*/
+}
+.txt-1 > a {
+    font-size: 32px;
+    background-color: #d9d9d9;
+    padding: 20px 28px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #000;
+    text-decoration : none;
+    font-weight: bold;
+}
+.txt-2 { display: flex;}
+.txt-2 > div { 
+    width: 50%;
+    margin: 145px 0;
+}
+.txt-2 > div >b {
+    font-size: 40px;
+    line-height: 48px;
+}
+.txt-2 > div >p {
+    font-size: 34px;
+    line-height: 41px;
+    width: 70%;
+}
+.txt-2 > div > img {
+    width: 765px 549px;
+}
