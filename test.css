@@ -17,11 +17,18 @@ body {
     font-size: 20pt;
     font-weight: bold;
     color: #000;
-    margin: 40px;
+    padding: 40px;
     text-decoration : none;
 }
 .main > img{
     width: 100%;
+}
+.main > .mini {
+    display: flex;
+    justify-content: center;
+}
+.main > div > img {
+    padding: 0 20px;
 }
 .main > .text {
     padding: 57px;
@@ -36,12 +43,12 @@ body {
     font-size: 33px;
     font-weight: bold;
 }
-.main > .text div{
+.main > .text > div{
     color: white;
     font-size: 60px;
     font-weight: bold;
 }
-.main > .text a {
+.main > .text > a {
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -71,7 +78,10 @@ body {
     text-decoration : none;
     font-weight: bold;
 }
-.txt-2 { display: flex;}
+.txt-2 { 
+    display: flex;
+    margin: auto;
+}
 .txt-2 > div { 
     width: 50%;
     margin: 145px 0;
@@ -88,3 +98,9 @@ body {
 .txt-2 > div > img {
     width: 765px 549px;
 }
+.reverse {
+    flex-direction: row-reverse;
+}
+.reverse > div:nth-child(2) {width: 60%;}
+.reverse > div:nth-child(2) >p {width: 90%;}
+.reverse > div:nth-child(1) {width: 40%;}
