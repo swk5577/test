@@ -3,7 +3,10 @@
  /* 속성과 값은 : 로 구분한다 */
  /* 명령이 끝나고나면 ; 를 찍는다 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
 body {
+    font-family: inter;
     width: 1750px;
     margin: auto;
     padding: 42px 85px;
@@ -14,11 +17,15 @@ body {
     margin: 57px 0;
 }
 .manu > a {
-    font-size: 20pt;
+    font-size: 36px;
     font-weight: bold;
     color: #000;
     padding: 40px;
     text-decoration : none;
+}
+.main{
+    position: relative;
+    margin: 0 0 12% 0;
 }
 .main > img{
     width: 100%;
@@ -26,21 +33,29 @@ body {
 .main > .mini {
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .main > div > img {
     padding: 0 20px;
 }
 .main > .text {
-    padding: 57px;
+    padding: 60px;
     background-color: #0a0a0a;
-    width: 40%;
+    width: 35%;
     border: 1px solid #000; 
     text-align: left;
     display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 9%;
 }   
 .main > .text > p {
     color: grey;
     font-size: 33px;
+    margin: 10px 0;
     font-weight: bold;
 }
 .main > .text > div{
@@ -48,11 +63,18 @@ body {
     font-size: 60px;
     font-weight: bold;
 }
-.main > .text > a {
+.main > .text > div > p{
+    margin: 10px 0;
+}
+.main .text  a {
     color: white;
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
+}
+span{
+    font-family: material symbols outlined;
+
 }
 .txt-1 {
     text-align: left;
@@ -68,7 +90,7 @@ body {
     margin: 52px 0;
     line-height: 43px; /*줄간격*/
 }
-.txt-1 > a {
+.contents a {
     font-size: 32px;
     background-color: #d9d9d9;
     padding: 20px 28px;
@@ -84,7 +106,7 @@ body {
 }
 .txt-2 > div { 
     width: 50%;
-    margin: 145px 0;
+    margin: 10% 0 0 0;
 }
 .txt-2 > div >b {
     font-size: 40px;
